@@ -6,22 +6,22 @@
   <meta name="description" content="Miraitowa 的个人空间：博客、项目与关于我。">
   <title>Miraitowa Hub · Hello, world</title>
   <style>
-    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #101820; color: #edf3f6; }
+    :root { color-scheme: light; font-family: system-ui, sans-serif; background: #f5f2ec; color: #182b3a; }
     * { box-sizing: border-box; }
     body { margin: 0; }
     main { max-width: 960px; margin: auto; padding: 48px 24px; }
     header { display: flex; justify-content: space-between; gap: 24px; align-items: center; }
     nav { display: flex; gap: 20px; flex-wrap: wrap; }
-    a { color: #a4e8d0; text-underline-offset: 5px; }
-    a:focus-visible { outline: 2px solid #a4e8d0; outline-offset: 6px; }
-    .hero { padding: 90px 0 64px; }
-    .eyebrow { color: #a4e8d0; letter-spacing: .12em; }
+    a { color: #205cba; text-underline-offset: 5px; }
+    a:focus-visible { outline: 2px solid #205cba; outline-offset: 6px; }
+    .hero { padding: 72px 0 56px; }
+    .eyebrow { display: inline-block; background: #dce8fc; color: #205cba; padding: 8px 16px; border-radius: 24px; letter-spacing: .12em; }
     h1 { font-size: clamp(44px, 8vw, 80px); line-height: 1.1; margin: 24px 0; }
-    p { color: #b6c5ce; line-height: 1.8; }
+    p { color: #536574; line-height: 1.8; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    section { border-top: 1px solid #34434e; padding-top: 16px; scroll-margin-top: 24px; }
+    section { background: #fff; border: 1px solid #dce2e7; border-radius: 20px; padding: 24px; scroll-margin-top: 24px; }
     h2 { font-size: 22px; }
-    footer { margin-top: 64px; border-top: 1px solid #34434e; padding-top: 24px; }
+    footer { margin-top: 48px; border-top: 1px solid #dce2e7; padding-top: 24px; }
     @media (max-width: 640px) { header { align-items: flex-start; flex-direction: column; } .grid { grid-template-columns: 1fr; } .hero { padding-top: 56px; } }
   </style>
 </head>
@@ -32,9 +32,9 @@
       <nav aria-label="主导航"><a href="#blog">博客</a><a href="#projects">项目</a><a href="#about">关于我</a></nav>
     </header>
     <div class="hero">
-      <p class="eyebrow">个人网站 · DEMO 01</p>
+      <p class="eyebrow">个人网站 · DEMO 02</p>
       <h1>Hello, world.<br>这里是 Miraitowa。</h1>
-      <p>记录想法，展示项目，分享探索。<br>这是个人网站的第一个 Demo，先让每一次更新都能抵达服务器。</p>
+      <p>记录想法，展示项目，分享探索。<br>第二版 Demo：浅色页面、蓝色点缀，用这次更新验证自动部署。</p>
       <a href="https://github.com/Miraitowa-la/miraitowa-hub">查看 GitHub 仓库 ↗</a>
     </div>
     <div class="grid">
@@ -42,7 +42,7 @@
       <section id="projects"><h2>02 / 项目</h2><p>第一个项目就是这个网站。从一个简单页面开始，逐步搭建个人空间。</p></section>
       <section id="about"><h2>03 / 关于我</h2><p>你好，我是 Miraitowa。更多个人介绍将在后续版本补充。</p></section>
     </div>
-    <footer><p>Miraitowa Hub · 首个部署 Demo</p><a href="/revision.txt">查看当前部署的提交编号</a></footer>
+    <footer><p>Miraitowa Hub · DEMO 02 · 自动部署验证</p><a href="/revision.txt">查看当前部署的提交编号</a></footer>
   </main>
 </body>
 </html>
