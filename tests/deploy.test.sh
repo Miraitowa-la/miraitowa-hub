@@ -19,7 +19,10 @@ docker() {
     [[ "$REVISION" == "$expected_revision" ]]
   }
 }
-curl() { printf '%s\n' "$returned_revision"; }
+curl() {
+  [[ "${@: -1}" == 'http://127.0.0.1:18087/revision.txt' ]]
+  printf '%s\n' "$returned_revision"
+}
 export -f mkdir cd git docker curl
 export expected_revision=0123456789abcdef0123456789abcdef01234567
 export returned_revision="$expected_revision"

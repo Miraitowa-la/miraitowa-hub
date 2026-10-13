@@ -26,8 +26,8 @@ jobs:
           bash tests/deploy.test.sh
           docker compose config --quiet
           docker compose up --build --detach --wait --wait-timeout 120
-          curl --fail --silent --show-error http://localhost:8080/ | grep -q 'Miraitowa'
-          test "$(curl --fail --silent --show-error http://localhost:8080/revision.txt)" = "$REVISION"
+          curl --fail --silent --show-error http://localhost:18087/ | grep -q 'Miraitowa'
+          test "$(curl --fail --silent --show-error http://localhost:18087/revision.txt)" = "$REVISION"
       - name: Container logs
         if: failure()
         run: docker compose logs

@@ -15,6 +15,6 @@ git fetch origin "$revision"
 git checkout --detach "$revision"
 export REVISION="$revision"
 docker compose up --build --detach --wait --wait-timeout 120
-deployed_revision="$(curl --fail --silent --show-error http://127.0.0.1:8080/revision.txt)"
+deployed_revision="$(curl --fail --silent --show-error http://127.0.0.1:18087/revision.txt)"
 [[ "$deployed_revision" == "$revision" ]] || { echo 'Deployed revision does not match' >&2; exit 1; }
 echo "Deployed $revision successfully"
